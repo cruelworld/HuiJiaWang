@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{21A1D673-8E24-49ED-A267-29C97784D858}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HuiJiaWang</RootNamespace>
+    <AssemblyName>HuiJiaWang</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\FindPassword.aspx" />
+    <Content Include="Account\Signin.aspx" />
+    <Content Include="Account\Signup.aspx" />
+    <Content Include="Account\Signup_Student.aspx" />
+    <Content Include="Account\Signup_Student_Step2.aspx" />
+    <Content Include="Account\Signup_Teacher.aspx" />
+    <Content Include="Account\Signup_Tech_Step2.aspx" />
+    <Content Include="App_Data\HuiJiao_db.mdf" />
+    <Content Include="App_Data\HuiJiao_db_Log.LDF">
+      <DependentUpon>HuiJiao_db.mdf</DependentUpon>
+    </Content>
+    <Content Include="article\Article1.aspx" />
+    <Content Include="article\Article10.aspx" />
+    <Content Include="article\Article11.aspx" />
+    <Content Include="article\Article12.aspx" />
+    <Content Include="article\Article13.aspx" />
+    <Content Include="article\Article14.aspx" />
+    <Content Include="article\Article2.aspx" />
+    <Content Include="article\Article3.aspx" />
+    <Content Include="article\Article4.aspx" />
+    <Content Include="article\Article5.aspx" />
+    <Content Include="article\Article6.aspx" />
+    <Content Include="article\Article7.aspx" />
+    <Content Include="article\Article8.aspx" />
+    <Content Include="article\Article9.aspx" />
+    <Content Include="Book_Teacher.aspx" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\Site.min.css" />
+    <Content Include="Content\Unresponsable.css" />
+    <Content Include="Content\UserPanel.css" />
+    <Content Include="Copyright.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="FAQ.aspx" />
+    <Content Include="favicon.png" />
+    <Content Include="Feedback.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="images\01.png" />
+    <Content Include="images\02.png" />
+    <Content Include="images\bg.png" />
+    <Content Include="images\person\00000000000000.jpg" />
+    <Content Include="images\person\00000000000001.jpg" />
+    <Content Include="images\person\20150415202321.jpg" />
+    <Content Include="images\person\20150415203925.jpg" />
+    <Content Include="images\person\20150417000008.jpg" />
+    <Content Include="images\person\20150417001944.jpg" />
+    <Content Include="images\person\20150417002835.jpg" />
+    <Content Include="images\person\20150418010909.jpg" />
+    <Content Include="images\person\20150418201441.jpg" />
+    <Content Include="images\person\20150418203100.jpg" />
+    <Content Include="images\person\20150507192007.jpg" />
+    <Content Include="images\person\20150507194429.jpg" />
+    <Content Include="images\person\20150507194648.jpg" />
+    <Content Include="images\person\20150507194923.jpg" />
+    <Content Include="images\sign01.PNG" />
+    <Content Include="images\sign02.png" />
+    <Content Include="images\slide1.png" />
+    <Content Include="images\slide2.png" />
+    <Content Include="images\slide3.png" />
+    <Content Include="images\slide4.png" />
+    <Content Include="images\slide5.png" />
+    <Content Include="images\图层 4.png" />
+    <Content Include="images\安徽省行政区划.png" />
+    <Content Include="images\徽教网-黑.png" />
+    <Content Include="images\徽教网白色.png" />
+    <Content Include="images\徽教网蓝色.png" />
+    <Content Include="images\暂无图片.png" />
+    <Content Include="manage\bottom.html" />
+    <Content Include="manage\count-about\yj.aspx" />
+    <Content Include="manage\count-about\zhmm.aspx" />
+    <Content Include="manage\count-person\addgly.aspx" />
+    <Content Include="manage\count-person\xgpw.aspx" />
+    <Content Include="manage\count-table\DetailStu.aspx" />
+    <Content Include="manage\count-table\DetailTea.aspx" />
+    <Content Include="manage\count-table\EditStu.aspx" />
+    <Content Include="manage\count-table\EditTea.aspx" />
+    <Content Include="manage\count-table\insertStu.aspx" />
+    <Content Include="manage\count-table\insertTea.aspx" />
+    <Content Include="manage\count-table\jyorder.aspx" />
+    <Content Include="manage\count-table\jytb.aspx" />
+    <Content Include="manage\count-table\MyPhotos\01.jpg" />
+    <Content Include="manage\count-table\MyPhotos\02.jpg" />
+    <Content Include="manage\count-table\MyPhotos\03.jpg" />
+    <Content Include="manage\count-table\MyPhotos\04.jpg" />
+    <Content Include="manage\count-table\MyPhotos\05.jpg" />
+    <Content Include="manage\count-table\MyPhotos\06.jpg" />
+    <Content Include="manage\count-table\MyPhotos\07.jpg" />
+    <Content Include="manage\count-table\MyPhotos\08.jpg" />
+    <Content Include="manage\count-table\MyPhotos\09.jpg" />
+    <Content Include="manage\count-table\MyPhotos\10.jpg" />
+    <Content Include="manage\count-table\MyPhotos\hhhh.jpg" />
+    <Content Include="manage\count-table\xyorder.aspx" />
+    <Content Include="manage\count-table\xytb.aspx" />
+    <Content Include="manage\count-ui\crtp.aspx" />
+    <Content Include="manage\count-ui\dxs.aspx" />
+    <Content Include="manage\count-ui\jpjy.aspx" />
+    <Content Include="manage\count-ui\sxls.aspx" />
+    <Content Include="manage\count-ui\yyjs.aspx" />
+    <Content Include="manage\css\font-awesome.min.css" />
+    <Content Include="manage\css\style.css" />
+    <Content Include="manage\fonts\fontawesome-webfont.svg" />
+    <Content Include="manage\images\title.JPG" />
+    <Content Include="manage\images\top-bg.jpg" />
+    <Content Include="manage\left.html" />
+    <Content Include="manage\main.html" />
+    <Content Include="manage\right.aspx" />
+    <Content Include="manage\top.aspx" />
+    <Content Include="Order_Student.aspx" />
+    <Content Include="Scripts\App.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-1.9.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\npm.js" />
+    <Content Include="Student_Center.aspx" />
+    <Content Include="Student_Detail.aspx" />
+    <Content Include="Teacher_Center.aspx" />
+    <Content Include="Teacher_Detail.aspx" />
+    <Content Include="Traiff.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\FindPassword.aspx.cs">
+      <DependentUpon>FindPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Signin.aspx.cs">
+      <DependentUpon>Signin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Signup.aspx.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Signup_Student.aspx.cs">
+      <DependentUpon>Signup_Student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Signup_Student_Step2.aspx.cs">
+      <DependentUpon>Signup_Student_Step2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Signup_Teacher.aspx.cs">
+      <DependentUpon>Signup_Teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Signup_Tech_Step2.aspx.cs">
+      <DependentUpon>Signup_Tech_Step2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="article\Article1.aspx.cs">
+      <DependentUpon>Article1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="article\Article10.aspx.cs">
+      <DependentUpon>Article10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="article\Article11.aspx.cs">
+      <DependentUpon>Article11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="article\Article12.aspx.cs">
+      <DependentUpon>Article12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="article\Article13.aspx.cs">
+      <DependentUpon>Article13.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="article\Article14.aspx.cs">
+      <DependentUpon>Article14.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="article\Article2.aspx.cs">
+      <DependentUpon>Article2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="article\Article3.aspx.cs">
+      <DependentUpon>Article3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="article\Article4.aspx.cs">
+      <DependentUpon>Article4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="article\Article5.aspx.cs">
+      <DependentUpon>Article5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="article\Article6.aspx.cs">
+      <DependentUpon>Article6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="article\Article7.aspx.cs">
+      <DependentUpon>Article7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="article\Article8.aspx.cs">
+      <DependentUpon>Article8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="article\Article9.aspx.cs">
+      <DependentUpon>Article9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Book_Teacher.aspx.cs">
+      <DependentUpon>Book_Teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Copyright.aspx.cs">
+      <DependentUpon>Copyright.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\count-about\yj.aspx.cs">
+      <DependentUpon>yj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\count-about\zhmm.aspx.cs">
+      <DependentUpon>zhmm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\count-person\addgly.aspx.cs">
+      <DependentUpon>addgly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\count-person\xgpw.aspx.cs">
+      <DependentUpon>xgpw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\count-table\DetailStu.aspx.cs">
+      <DependentUpon>DetailStu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\count-table\DetailTea.aspx.cs">
+      <DependentUpon>DetailTea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\count-table\EditStu.aspx.cs">
+      <DependentUpon>EditStu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\count-table\EditTea.aspx.cs">
+      <DependentUpon>EditTea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\count-table\insertStu.aspx.cs">
+      <DependentUpon>insertStu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\count-table\insertTea.aspx.cs">
+      <DependentUpon>insertTea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\count-table\jyorder.aspx.cs">
+      <DependentUpon>jyorder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\count-table\jytb.aspx.cs">
+      <DependentUpon>jytb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\count-table\xyorder.aspx.cs">
+      <DependentUpon>xyorder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\count-table\xytb.aspx.cs">
+      <DependentUpon>xytb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\count-ui\crtp.aspx.cs">
+      <DependentUpon>crtp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\count-ui\dxs.aspx.cs">
+      <DependentUpon>dxs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\count-ui\jpjy.aspx.cs">
+      <DependentUpon>jpjy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\count-ui\sxls.aspx.cs">
+      <DependentUpon>sxls.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\count-ui\yyjs.aspx.cs">
+      <DependentUpon>yyjs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\right.aspx.cs">
+      <DependentUpon>right.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage\top.aspx.cs">
+      <DependentUpon>top.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order_Student.aspx.cs">
+      <DependentUpon>Order_Student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.master.cs">
+      <DependentUpon>Site.master</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Center.aspx.cs">
+      <DependentUpon>Student_Center.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Detail.aspx.cs">
+      <DependentUpon>Student_Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher_Center.aspx.cs">
+      <DependentUpon>Teacher_Center.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher_Detail.aspx.cs">
+      <DependentUpon>Teacher_Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Traiff.aspx.cs">
+      <DependentUpon>Traiff.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="manage\fonts\fontawesome-webfont.eot" />
+    <Content Include="manage\fonts\fontawesome-webfont.ttf" />
+    <Content Include="manage\fonts\fontawesome-webfont.woff" />
+    <Content Include="manage\fonts\fontawesome-webfont.woff2" />
+    <Content Include="manage\fonts\FontAwesome.otf" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Site.master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59276</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59276/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,203 @@
+﻿/*!-------------------------
+ * ©2015 CruelWorld Studio
+ * -------------------------
+ */
+*{font-family: "Microsoft YaHei"}
+
+body {               
+   margin: 0;
+}
+
+a{
+    color:gray;
+    text-decoration:none;
+}
+
+nav, nav a{    
+    background-color:#103440;       /*#3F598C;*/    
+    color:white;
+    font-size:12pt;    
+    transition-duration:0.05s;
+}
+
+article{    
+    font-size:10pt;    
+    text-indent:20pt;
+    margin:10px auto auto 20px;
+    line-height:20pt;
+}
+
+td strong{
+    color: #4D1B28;
+    opacity: 0.9;
+}
+
+nav{
+    height:50px;
+}
+
+footer{margin-top:50px}
+
+li{
+  list-style:none;
+  text-indent:0;
+}
+
+article li{
+    text-indent:12pt;
+}
+
+/* 自定义类 
+ */
+ 
+.container{
+    width: 600px !important;
+}
+
+.clear{
+    clear:both;
+    height:10px;
+}
+
+.white,.white a{color:white}
+
+.black,.black a{color:black}
+
+.gray,.gray a{color:gray}
+
+.red,.red a{color:#4D1B28}
+
+.blue,.blue a{color:#103440}
+
+.faqLabel{
+  background-color:#103440;
+  color:white;
+  padding:5px 12px 5px 12px;
+  border-radius:3px 3px;
+}
+
+.h3-label{
+    background: #103440;
+    height: 16pt;
+    width: 5px;
+}
+
+.h4-label{
+    background: #103440;
+    height: 14pt;
+    width: 5px;
+}
+
+.h5-label{
+    background: #103440;
+    height: 12pt;
+    width: 5px;
+}
+.logo{
+    opacity: 0.6;
+}
+
+.list-box{
+  width:270px;
+  line-height:12pt;
+}
+
+.dropdown-menu *{
+    background-color:White;
+    color:Black;    
+}
+
+.btn-DefaultStyle{
+  background-color:#103440;
+  color:White;
+  padding:8px 15px 8px 15px;
+  border:0;
+  border-radius:3px 3px;
+}
+
+.transparent-l{
+    height:200px;
+}
+
+.transparent-s{
+    height:100px;
+}
+
+/* 自定义ID 
+ */
+
+#contact {    
+    background-image: url('~/images/图层%204.png');   
+    color:black;
+    height: 250px;
+    width: 275px;
+    margin-top:50px;
+    margin-left:35px;
+    font-size:10pt;   
+    opacity:0.7; 
+}
+
+#students,#teachers{
+    color:white;
+    display:inline-block;    
+    width: 265.7px;
+    height:125px;
+    margin-top:4px;
+    padding: 5px 25px 5px 25px;
+    transition-duration:0.35s;
+    transition-delay:0.01s;
+}
+
+#students{background-color:#103440/*#3F598C*/;}
+
+#teachers{background-color:#4D1B28/*#8C4552*/;}
+
+#AboutInfo a, #FriendLink a{
+  font-size:10pt;
+}  
+
+#nav-login a:hover{
+    color:White;
+    text-decoration:underline;
+}
+
+#logo{
+    opacity: 0.7;
+    transition-delay:0.01s;
+    transition-duration:0.35s;
+}
+
+/*  自定义字体
+ *
+ *  @font-face{
+ *     font-family:'ZK GaoDuanHei';
+ *     src:local('站酷高端黑'), url('/fonts/站酷高端黑修订版3.23.ttf') format('truetype');
+ *  }
+ */
+
+/* 事件动画 
+ */
+
+a:hover{color:#103440}
+
+.gray a:hover{color:#4D1B28}
+
+.btn-DefaultStyle:hover{
+  box-shadow:0px 0px 4px #103440;
+}
+
+.logo:hover,#logo:hover{
+    opacity: 0.5;
+}
+
+#title a:hover{color:#103440}
+
+#students:hover,#students a:hover{
+    background-color:gray;
+    color:#4D1B28;
+}
+
+#teachers:hover,#teachers a:hover{
+    background-color:gray;
+    color:#103440;
+}
